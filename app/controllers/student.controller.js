@@ -49,7 +49,7 @@ exports.findAll = (req, res) => {
   if (req.query.DOB) {
 
     const startDate = req.query.DOB.split(',')[0];
-    const endDate = req.query.DOB.split(',')[0];
+    const endDate = req.query.DOB.split(',')[1];
     console.log(startDate)
     condition = {
       DOB: {
